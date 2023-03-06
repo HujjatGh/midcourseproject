@@ -1,4 +1,4 @@
-[
+const pokemons = [
     {
       thumbnail: '001.png',
       id:'N°01' ,
@@ -97,4 +97,18 @@
     }
   ]
   
+  const x = document.querySelector("body");
   
+  
+  
+  for (let i=0; i < pokemons.length; i++) {
+    const newDiv = document.createElement ("div");
+    const newContent = document.createTextNode(pokemons[i].name);
+    newDiv.appendChild(newContent);
+    x.appendChild(newDiv);
+    newDiv.classList.add("card");
+    const newImg = document.createElement ("img");
+    newImg.createAttribute("src");
+    newImg.src = ./myFolder/pokemons[i].thumbnail;
+
+  console.log("hello!!!")
